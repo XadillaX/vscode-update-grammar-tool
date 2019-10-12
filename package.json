@@ -1,0 +1,33 @@
+{
+  "name": "vscode-update-grammar-tool",
+  "version": "1.0.0",
+  "description": "Grammar update tool for VSCode. (Extracted from vscode)",
+  "main": "index.js",
+  "scripts": {
+    "test": "egg-bin test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XadillaX/vscode-update-grammar-tool.git"
+  },
+  "author": "XadillaX <i@2333.moe>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XadillaX/vscode-update-grammar-tool/issues"
+  },
+  "homepage": "https://github.com/XadillaX/vscode-update-grammar-tool#readme",
+  "devDependencies": {
+    "egg-bin": "^4.14.0",
+    "eslint": "^6.5.1",
+    "eslint-config-xadillax-style": "^1.10.0",
+    "rimraf": "^3.0.0",
+    "utility": "^1.16.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cson-parser": "^4.0.2",
+    "fast-plist": "^0.1.2",
+    "nomnom": "^1.8.1",
+    "urllib": "^2.34.1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "information_for_contributors": [
+    "This file has been converted from https://github.com/Alhadis/language-viml/blob/master/grammars/viml.cson",
+    "If you want to provide a fix or improvement, please create a pull request against the original repository.",
+    "Once accepted there, we are happy to receive an update request."
+  ],
+  "version": "https://github.com/Alhadis/language-viml/commit/c5950dd59dfb11dc34df2f4077a410821ad71c5b",
+  "name": "VimL",
+  "scopeName": "source.viml",
+  "patterns": [
+    {
+      "include": "#main"
+    }
+  ],
+  "repository": {
+    "modified": true
+  }
+}
