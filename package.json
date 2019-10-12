@@ -4,7 +4,8 @@
   "description": "Grammar update tool for VSCode. (Extracted from vscode)",
   "main": "index.js",
   "scripts": {
-    "test": "egg-bin test"
+    "test": "mocha test/**/*.test.js",
+    "coverage": "istanbul cover _mocha --report lcovonly -- test/**/*.test.js --timeout=120000 -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,11 @@
   },
   "homepage": "https://github.com/XadillaX/vscode-update-grammar-tool#readme",
   "devDependencies": {
-    "egg-bin": "^4.14.0",
     "eslint": "^6.5.1",
     "eslint-config-xadillax-style": "^1.10.0",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^6.2.1",
+    "mocha-lcov-reporter": "^1.3.0",
     "rimraf": "^3.0.0",
     "utility": "^1.16.1"
   },
@@ -29,5 +32,8 @@
     "fast-plist": "^0.1.2",
     "nomnom": "^1.8.1",
     "urllib": "^2.34.1"
+  },
+  "bin": {
+    "update-grammar": "./bin/update-grammar"
   }
 }

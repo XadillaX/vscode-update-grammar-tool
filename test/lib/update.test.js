@@ -8,7 +8,7 @@ const utility = require("utility");
 
 const update = require("../../lib/update");
 
-describe.only("lib/get_commit_sha.test.js", () => {
+describe("lib/update.test.js", () => {
     const destPath = path.join(__dirname, "..", "tmp", "viml.tmLanguage.json");
 
     function cleanup() {
