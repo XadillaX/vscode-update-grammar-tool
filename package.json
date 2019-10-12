@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/XadillaX/vscode-update-grammar-tool#readme",
   "devDependencies": {
+    "coveralls": "^3.0.7",
     "eslint": "^6.5.1",
     "eslint-config-xadillax-style": "^1.10.0",
     "istanbul": "^1.1.0-alpha.1",
